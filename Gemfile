@@ -47,6 +47,7 @@ gem "faker"
 gem 'cuid'
 gem "pry-rails"
 gem 'hexapdf'
+gem 'mimemagic', '0.3.9'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,6 +64,13 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rubocop'
   gem 'kramdown'
+
+  # Capistrano for deployment
+  gem 'capistrano',                 '3.17.1'
+  gem 'capistrano-passenger',       '0.2.1'
+  gem 'capistrano-rails',           '1.4.0'
+  gem 'capistrano-rbenv',           '2.1.4 '
+  gem 'capistrano-yarn', '~> 2.0', '>= 2.0.2'
 
   # required for ActiveStorage::Previewer::PopplerPDFPreviewer
   # gem 'poppler'
